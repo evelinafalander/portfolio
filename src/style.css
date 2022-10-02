@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2 {
+    font-family: "orpheuspro", serif;
+  }
+}
+@layer base {
+  p,
+  a,
+  h3 {
+    font-family: "Archivo", sans-serif;
+  }
+}
+
+/*.stroke {
+  -webkit-text-stroke: 1px white; evelina.falander@gmail.com
+}*/
+
+.flip {
+  transform: rotate(-90deg);
+  
+}
+
+.mymail {
+  animation: rotateMe 0.5s linear forwards;
+}
+.textSize p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+.addFont {
+  font-family: "orpheuspro", serif;
+
+}
+
+/*ANIMATIONS*/
+.myBanner {
+  animation: banner 8s linear infinite;
+}
+
+@keyframes banner {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-180%);
+  }
+}
+
+
+@keyframes rotateMe {
+  to {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: translateX(-45%);
+  }
+}
+
+.banner-inner {
+	animation: myBanner 20s linear infinite;
+	display: inline-block;
+  position: relative;
+	
+}
+
+.banner-copy-before {
+	position: absolute;
+	right: calc(100% + 0.25em);
+}
+.banner-copy-after {
+	position: absolute;
+	left: calc(100% + 0.25em);
+}
+
+@keyframes myBanner {
+	0% {
+		transform: translateX(0);
+	} 100% {
+		transform: translateX(calc(-100% - 0.25em));
+	}
+}
