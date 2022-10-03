@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://use.typekit.net/qcr4yut.css">
     <link rel="stylesheet" href="https://use.typekit.net/qcr4yut.css" />
   </head>
   <body class="cursor-mincursor bg-grey [&_a]:hover:cursor-hovercursor">
@@ -35,7 +36,7 @@
     <main>
       <div id="myMail" class="flip fixed text-right text-sm top-[140px] right-[-65px]">
         <a
-          class="hover:text-green hover:font-bold hover:text-lg"
+          class="hover:text-green hover:font-bold"
           href="mailto: evelina.falander@gmail.com" target="_blank" 
         >
           evelina.falander@gmail.com</a
@@ -43,15 +44,15 @@
         <p>tel. +46 725127411</p>
       </div>
       <section class="grid pt-28 pb-20 xl:grid-cols-2 xl:pr-16 xxl:pt-10">
-        <div class="flex flex-col xl:place-self-end xl:pr-10">
+        <div class="flex uppercase flex-col xl:place-self-end xl:pr-10 font-light text-grey">
         <h1
-          class="stroke pl-3 text-7xl text-white md:pl-20 md:text-8xl xl:p-0 xxl:text-9xl"
+          class="stroke pl-3 text-6xl  md:pl-20 md:text-8xl xl:p-0 xxl:text-9xl"
         >
           Evelina
         </h1>
 
         <h1
-          class="stroke self-end pr-3 pt-4 text-7xl text-white md:pr-20 md:text-8xl xl:p-0 xxl:text-9xl"
+          class="stroke self-end pr-3 pt-4 text-6xl  md:pr-20 md:text-8xl xl:p-0 xxl:text-9xl"
         >
           Falander
         </h1>
@@ -65,7 +66,7 @@
       </section>
       <section id="aboutMe" class="overflow-hidden pt-15 xl:pt-20">
 
-        <div class="text-7xl text-orange addFont">
+        <div class="text-7xl text-orange font-light addFont">
           <div class="banner-inner whitespace-nowrap">
             <span class="banner-copy-before">About me.&nbsp; About me.&nbsp;  About me.&nbsp; About me. </span>
             About me.&nbsp; About me.&nbsp;  About me.&nbsp; About me.
@@ -104,7 +105,7 @@
 
               <div class="grid place-content-center p-5">
                 <a
-                  class="hover:border-b-2 hover:border-green"
+                  class="hover:text-green hover:font-bold"
                   href="https://www.linkedin.com/in/evelina-falander/" target="_blank" 
                   >Linkedin</a
                 >
@@ -113,9 +114,9 @@
           </div>
         </article>
       </section>
-      <section id="myProjects" class="h-screen overflow-hidden">
+      <section id="myProjects" class=" overflow-hidden">
 
-        <div class="text-7xl text-purple">
+        <div class="text-7xl font-light text-purple addFont">
           <div class="banner-inner whitespace-nowrap">
             <span class="banner-copy-before">Selected projects.&nbsp; Selected projects.&nbsp;  Selected projects.&nbsp; Selected projects. </span>
             Selected projects.&nbsp; Selected projects.&nbsp;  Selected projects.&nbsp; Selected projects. 
@@ -123,9 +124,47 @@
           </div>
         </div>
 
+        <article class="px-12 py-20">
+          <div class="border-x-2 border-t-2 border-white">
+            <img class="p-3" src="img/kraess.png" alt="kraess website">
+          </div>
+          <div class="border-2 border-white [&_p]:px-3 [&_p]:py-2 [&_p]:border-white">
+            <div>
+              <p class="border-b-2">
+                Name
+              </p>
+              
+
+            </div>
+            <div>
+
+              
+              <p class="border-b-2 info">
+                Info
+              </p>
+              <p class="border-b-2 hidden infoText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation
+              </p>
+            
+
+            </div>
+            <div>
+              <p>
+                My Tasks
+              </p>
+              
+            </div>
+
+          </div>
+        </article>
+
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p class="font-light text-center">© Evelina Falander 2022</p>
+    </footer>
 
     <script type="module" src="./main.js"></script>
   </body>

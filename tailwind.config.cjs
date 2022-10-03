@@ -13,8 +13,8 @@ module.exports = {
 
     extend: {
       cursor: {
-        mincursor: "url(svg/cross.svg) 25 25, pointer",
-        hovercursor: "url(svg/cross-fill.svg) 25 25, pointer",
+        mincursor: "url(svg/cross.svg) 20 20, pointer",
+        hovercursor: "url(svg/cross-fill.svg) 20 20, pointer",
       },
 
       colors: {

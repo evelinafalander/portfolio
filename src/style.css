@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  h1,
+  
   h2 {
     font-family: "orpheuspro", serif;
   }
@@ -11,14 +11,21 @@
 @layer base {
   p,
   a,
-  h3 {
+  h3,
+  h1 {
     font-family: "Archivo", sans-serif;
   }
 }
 
-/*.stroke {
-  -webkit-text-stroke: 1px white; evelina.falander@gmail.com
-}*/
+.stroke {
+  -webkit-text-stroke: 1px black; 
+}
+.infoText {
+  display: none;
+}
+.info {
+  display: block;
+}
 
 .flip {
   transform: rotate(-90deg);
@@ -31,10 +38,10 @@
 .textSize p {
   font-size: clamp(1rem, 2vw, 1.2rem);
 }
-.addFont {
+/*.addFont {
   font-family: "orpheuspro", serif;
 
-}
+}*/
 
 /*ANIMATIONS*/
 .myBanner {
