@@ -20,12 +20,8 @@
 .stroke {
   -webkit-text-stroke: 1px black; 
 }
-.infoText {
-  display: none;
-}
-.info {
-  display: block;
-}
+
+
 
 .flip {
   transform: rotate(-90deg);
@@ -42,30 +38,19 @@
   font-family: "orpheuspro", serif;
 
 }*/
+/*COLLABSABLE*/
+.info-content {
+  display: none;
+  overflow: hidden;
 
-/*ANIMATIONS*/
-.myBanner {
-  animation: banner 8s linear infinite;
 }
 
-@keyframes banner {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-180%);
-  }
+.active {
+  opacity: 1;
 }
 
 
-@keyframes rotateMe {
-  to {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: translateX(-45%);
-  }
-}
+/*BANNER*/
 
 .banner-inner {
 	animation: myBanner 20s linear infinite;
@@ -82,6 +67,19 @@
 	position: absolute;
 	left: calc(100% + 0.25em);
 }
+
+/*ANIMATIONS*/
+
+@keyframes rotateMe {
+  to {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: translateX(-45%);
+  }
+}
+
+
 
 @keyframes myBanner {
 	0% {
