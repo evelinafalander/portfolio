@@ -16,54 +16,45 @@
     <link rel="stylesheet" href="https://use.typekit.net/qcr4yut.css" />
   </head>
   <body class="cursor-mincursor bg-grey [&_a]:hover:cursor-hovercursor">
-    <header class="sticky top-0 z-50 grid border-b-2 border-white bg-grey">
-      <a href="#"
-        ><img class="mb-1 ml-1 w-[50px]" src="svg/green-e.svg" alt="logo"
-      /></a>
-      <ul class="col-start-3 flex text-base text-white">
-        <li
-          class="flex items-center border-x-2 border-white hover:bg-white hover:text-grey"
-        >
-          <a class="px-4" href="#aboutMe">About</a>
-        </li>
-        <li
-          class="flex items-center border-r-2 border-white hover:bg-white hover:text-grey"
-        >
-          <a class="px-4" href="#myProjects">Projects</a>
-        </li>
-      </ul>
-    </header>
+   <header>
+    <div id="myMail" class="flip fixed text-right text-sm top-[90px] right-[-65px]">
+      <a
+        class="hover:text-purple hover:font-bold"
+        href="mailto: evelina.falander@gmail.com" target="_blank" 
+      >
+        evelina.falander@gmail.com</a
+      >
+      <p>tel. +46 725127411</p>
+    
+    </div>
+    <div class="flex uppercase flex-col pt-5 px-10 xl:place-self-end xl:pr-10 font-light text-grey">
+      <h1
+        class="stroke pl-3 text-5xl  md:pl-20 md:text-8xl xl:p-0 xxl:text-9xl"
+      >
+        Evelina
+      </h1>
+
+      <h1
+        class="stroke self-end pr-3 pt-4 text-5xl  md:pr-20 md:text-8xl xl:p-0 xxl:text-9xl"
+      >
+        Falander
+      </h1>
+    </div>
+
+
+   </header>
     <main>
-      <div id="myMail" class="flip fixed text-right text-sm top-[140px] right-[-65px]">
-        <a
-          class="hover:text-purple hover:font-bold"
-          href="mailto: evelina.falander@gmail.com" target="_blank" 
-        >
-          evelina.falander@gmail.com</a
-        >
-        <p>tel. +46 725127411</p>
-      </div>
-      <section class="grid pt-28 pb-20 xl:grid-cols-2 xl:pr-16 xxl:pt-10">
-        <div class="flex uppercase flex-col xl:place-self-end xl:pr-10 font-light text-grey">
-        <h1
-          class="stroke pl-3 text-6xl  md:pl-20 md:text-8xl xl:p-0 xxl:text-9xl"
-        >
-          Evelina
-        </h1>
-
-        <h1
-          class="stroke self-end pr-3 pt-4 text-6xl  md:pr-20 md:text-8xl xl:p-0 xxl:text-9xl"
-        >
-          Falander
-        </h1>
-      </div>
-
+     <!---HERO SECTION-->
+      <section class="grid grid-cols-3 pt-28 pb-20 xl:grid-cols-2 xl:pr-16 xxl:pt-10">
+        
+<h2>DIGITAL DESIGNER</h2>
         <img
-          class="w-[90%] md:w-[80%] xxl:w-[70%] justify-self-center pt-16 xxl:justify-self-start"
-          src="img/me.webp"
+          class="w-[90%] md:w-[80%] col-start-2 col-end-4 xxl:w-[70%] xxl:justify-self-start"
+          src="img/filler.png"
           alt="photo of Evelina"
         />
       </section>
+      <!---ABOUT ME-->
       <section id="aboutMe" class="overflow-hidden pt-15 xl:pt-20">
 
         <div class="text-7xl text-green font-light addFont">
@@ -114,6 +105,7 @@
           </div>
         </article>
       </section>
+      <!---PROJECTS-->
       <section id="myProjects" class=" overflow-hidden">
 
         <div class="text-7xl font-light text-green addFont">

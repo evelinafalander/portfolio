@@ -2,17 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
-  
-  h2 {
-    font-family: "orpheuspro", serif;
-  }
-}
-@layer base {
-  p,
-  a,
-  h3,
-  h1 {
+ body {
     font-family: "Archivo", sans-serif;
   }
 }
