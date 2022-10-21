@@ -12,60 +12,80 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://use.typekit.net/qcr4yut.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qcr4yut.css" />
     <link rel="stylesheet" href="https://use.typekit.net/qcr4yut.css" />
   </head>
   <body class="cursor-mincursor bg-grey [&_a]:hover:cursor-hovercursor">
-   <header>
-    <div id="myMail" class="flip fixed text-right text-sm top-[90px] right-[-65px]">
-      <a
-        class="hover:text-purple hover:font-bold"
-        href="mailto: evelina.falander@gmail.com" target="_blank" 
+    <header>
+      <div
+        id="myMail"
+        class="flip fixed top-[90px] right-[-65px] hidden text-right text-sm"
       >
-        evelina.falander@gmail.com</a
+        <a
+          class="underline hover:font-bold hover:text-purple"
+          href="mailto: evelina.falander@gmail.com"
+          target="_blank"
+        >
+          evelina.falander@gmail.com</a
+        >
+        <p>tel. +46 725127411</p>
+      </div>
+      <div
+        class="flex flex-col px-10 pt-12 uppercase xl:place-self-end xl:pr-10"
       >
-      <p>tel. +46 725127411</p>
-    
-    </div>
-    <div class="flex uppercase flex-col pt-5 px-10 xl:place-self-end xl:pr-10 font-light text-grey">
-      <h1
-        class="stroke pl-3 text-5xl  md:pl-20 md:text-8xl xl:p-0 xxl:text-9xl"
-      >
-        Evelina
-      </h1>
+        <h1 class="stroke text-5xl md:pl-20 md:text-8xl xl:p-0 xxl:text-9xl">
+          Evelina
+        </h1>
 
-      <h1
-        class="stroke self-end pr-3 pt-4 text-5xl  md:pr-20 md:text-8xl xl:p-0 xxl:text-9xl"
+        <h1
+          class="stroke self-end pt-2 text-5xl md:pr-20 md:text-8xl xl:p-0 xxl:text-9xl"
+        >
+          Falander
+        </h1>
+      </div>
+    </header>
+    <main class="overflow-clip">
+      <!---HERO SECTION-->
+      <section
+        class="grid grid-cols-3 pb-36 pt-36 xl:grid-cols-2 xl:pr-16 xxl:pt-10"
       >
-        Falander
-      </h1>
-    </div>
-
-
-   </header>
-    <main>
-     <!---HERO SECTION-->
-      <section class="grid grid-cols-3 pt-28 pb-20 xl:grid-cols-2 xl:pr-16 xxl:pt-10">
-        
-<h2>DIGITAL DESIGNER</h2>
+        <div
+          class="z-10 col-start-1 col-end-3 row-start-1 pt-12 pl-5 text-5xl tracking-wider text-green"
+        >
+          <h2 class="pb-1 uppercase">Digital</h2>
+          <h2 class="uppercase">Designer</h2>
+        </div>
         <img
-          class="w-[90%] md:w-[80%] col-start-2 col-end-4 xxl:w-[70%] xxl:justify-self-start"
+          class="col-start-2 col-end-4 row-start-1 w-[90%] md:w-[80%] xxl:w-[70%] xxl:justify-self-start"
           src="img/filler.png"
           alt="photo of Evelina"
         />
+        <div
+          class="absolute top-[500px] left-[20px] z-10 flex flex-col items-center justify-center rounded-full border-2 border-white bg-grey/80"
+          style="height: 200px; width: 200px"
+        >
+          <a class="underline" href="#aboutMe">ABOUT ME</a>
+          <a class="underline" href="#myProjects">MY PROJECTS</a>
+        </div>
       </section>
-      <!---ABOUT ME-->
-      <section id="aboutMe" class="overflow-hidden pt-15 xl:pt-20">
 
-        <div class="text-7xl text-green font-light addFont">
+      <!---ABOUT ME-->
+      <section id="aboutMe" class="pt-15 overflow-hidden xl:pt-20">
+        <div class="addFont text-7xl font-light text-green">
           <div class="banner-inner whitespace-nowrap">
-            <span class="banner-copy-before">About me.&nbsp; About me.&nbsp;  About me.&nbsp; About me. </span>
-            About me.&nbsp; About me.&nbsp;  About me.&nbsp; About me.
-            <span class="banner-copy-after">About me.&nbsp; About me.&nbsp;  About me.&nbsp; About me. </span>
+            <span class="banner-copy-before"
+              >About me.&nbsp; About me.&nbsp; About me.&nbsp; About me.
+            </span>
+            About me.&nbsp; About me.&nbsp; About me.&nbsp; About me.
+            <span class="banner-copy-after"
+              >About me.&nbsp; About me.&nbsp; About me.&nbsp; About me.
+            </span>
           </div>
         </div>
 
-        <article class="textSize px-12 py-20 md:px-20 xl:py-36 xl:grid xl:grid-cols-2 xl:px-36 xxl:px-60">
+        <article
+          class="textSize px-12 py-20 md:px-20 xl:grid xl:grid-cols-2 xl:py-36 xl:px-36 xxl:px-60"
+        >
           <div class="border-2 border-white">
             <p class="p-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -74,30 +94,53 @@
               nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
-          <div class="border-x-2 border-b-2 border-white xl:border-t-2 xl:border-l-0">
+          <div
+            class="border-x-2 border-b-2 border-white xl:border-t-2 xl:border-l-0"
+          >
             <div class="[&_p]:px-3 [&_p]:py-2">
-              <h3 class="border-b-2 border-white p-3 text-xl font-medium">
+              <h3 class="border-b-2 border-white p-3 font-medium uppercase">
                 Skills
               </h3>
-              <p class="border-b-2 border-white">skill1</p>
-              <p class="border-b-2 border-white">skill2</p>
-              <p class="border-b-2 border-white">skill3</p>
-              <p class="border-b-2 border-white">skill4</p>
+              <div class="flex justify-between border-b-2 border-white">
+                <p class="">Figma</p>
+                <p class="font-extralight uppercase">Proficient</p>
+              </div>
+              <div class="flex justify-between border-b-2 border-white">
+                <p class="">Illustrator, Photoshop, InDesign</p>
+                <p class="font-extralight uppercase">Proficient</p>
+              </div>
+              <div class="flex justify-between border-b-2 border-white">
+                <p class="">Premier pro</p>
+                <p class="font-extralight uppercase">Intermediatet</p>
+              </div>
+
+              <div class="flex justify-between border-b-2 border-white">
+                <p class="">HTML5, CSS</p>
+                <p class="font-extralight uppercase">Intermediate</p>
+              </div>
+              <div class="flex justify-between border-b-2 border-white">
+                <p class="">JavaScript</p>
+                <p class="font-extralight uppercase">Beginner</p>
+              </div>
             </div>
 
             <div class="grid grid-cols-2">
               <div
                 class="grid place-content-center border-r-2 border-white p-5"
               >
-                <a class=" hover:text-purple hover:font-bold" href="#" target="_blank" 
+                <a
+                  class="underline hover:font-bold hover:text-purple"
+                  href="#"
+                  target="_blank"
                   >Download CV</a
                 >
               </div>
 
               <div class="grid place-content-center p-5">
                 <a
-                  class="hover:text-purple hover:font-bold"
-                  href="https://www.linkedin.com/in/evelina-falander/" target="_blank" 
+                  class="underline hover:font-bold hover:text-purple"
+                  href="https://www.linkedin.com/in/evelina-falander/"
+                  target="_blank"
                   >Linkedin</a
                 >
               </div>
@@ -106,59 +149,162 @@
         </article>
       </section>
       <!---PROJECTS-->
-      <section id="myProjects" class=" overflow-hidden">
-
-        <div class="text-7xl font-light text-green addFont">
+      <section id="myProjects" class="overflow-hidden">
+        <div class="addFont text-7xl font-light text-green">
           <div class="banner-inner whitespace-nowrap">
-            <span class="banner-copy-before">Selected projects.&nbsp; Selected projects.&nbsp;  Selected projects.&nbsp; Selected projects. </span>
-            Selected projects.&nbsp; Selected projects.&nbsp;  Selected projects.&nbsp; Selected projects. 
-            <span class="banner-copy-after">Selected projects.&nbsp; Selected projects.&nbsp;  Selected projects.&nbsp; Selected projects. </span>
+            <span class="banner-copy-before"
+              >Selected projects.&nbsp; Selected projects.&nbsp; Selected
+              projects.&nbsp; Selected projects.
+            </span>
+            Selected projects.&nbsp; Selected projects.&nbsp; Selected
+            projects.&nbsp; Selected projects.
+            <span class="banner-copy-after"
+              >Selected projects.&nbsp; Selected projects.&nbsp; Selected
+              projects.&nbsp; Selected projects.
+            </span>
           </div>
         </div>
 
+        <!--Vildskud-->
         <article class="px-12 py-20">
           <div class="border-x-2 border-t-2 border-white">
-            <img class="p-3" src="img/kraess.png" alt="kraess website">
+            <img class="p-3" src="img/kraess.png" alt="kraess website" />
           </div>
-          <div class="border-2 border-white [&_p]:px-3 [&_p]:py-2 [&_p]:border-white">
+          <div class="[&_p]: border-2 border-white">
             <div>
-              <p class="border-b-2">
-                Name
+              <p class="border-b-2 border-white px-3 py-2">
+                KRÆSS - a digital solution
               </p>
-              
-
             </div>
-            <div>
-
-              
-             <div class="info">
-              <p class="border-b-2">
-                Info
-              </p>
-            </div> 
-            <div class="info-content">
-              <p class="border-b-2 ">
+            <details class="border-b-2 border-white">
+              <summary class="px-3 py-2">
+                <span class="pl-2">Read More</span>
+              </summary>
+              <p class="px-7 py-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation
               </p>
-              </div>
+            </details>
 
-            </div>
-            <div>
-              <p>
-                My Tasks
+            <details>
+              <summary class="px-3 py-2">
+                <span class="pl-2">My Tasks</span>
+              </summary>
+              <p class="px-7 py-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation
               </p>
-              
-            </div>
-
+            </details>
           </div>
         </article>
+        <!--Portfolio-->
+        <article class="px-12 py-20">
+          <div class="border-x-2 border-t-2 border-white">
+            <img class="p-3" src="img/kraess.png" alt="kraess website" />
+          </div>
+          <div class="[&_p]: border-2 border-white">
+            <div>
+              <p class="border-b-2 border-white px-3 py-2">
+                KRÆSS - a digital solution
+              </p>
+            </div>
+            <details class="border-b-2 border-white">
+              <summary class="px-3 py-2">
+                <span class="pl-2">Read More</span>
+              </summary>
+              <p class="px-7 py-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation
+              </p>
+            </details>
 
+            <details>
+              <summary class="px-3 py-2">
+                <span class="pl-2">My Tasks</span>
+              </summary>
+              <p class="px-7 py-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation
+              </p>
+            </details>
+          </div>
+        </article>
+        <!--Kreass-->
+        <article class="px-12 py-20">
+          <div class="border-x-2 border-t-2 border-white">
+            <img class="p-3" src="img/kraess.png" alt="kraess website" />
+          </div>
+          <div class="[&_p]: border-2 border-white">
+            <div>
+              <p class="border-b-2 border-white px-3 py-2">
+                KRÆSS - a digital solution
+              </p>
+            </div>
+            <details class="border-b-2 border-white">
+              <summary class="px-3 py-2">
+                <span class="pl-2">Read More</span>
+              </summary>
+              <p class="px-7 py-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation
+              </p>
+            </details>
+
+            <details>
+              <summary class="px-3 py-2">
+                <span class="pl-2">My Tasks</span>
+              </summary>
+              <p class="px-7 py-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation
+              </p>
+            </details>
+          </div>
+        </article>
+        <!--Customise me-->
+        <article class="px-12 py-20">
+          <div class="border-x-2 border-t-2 border-white">
+            <img class="p-3" src="img/kraess.png" alt="kraess website" />
+          </div>
+          <div class="[&_p]: border-2 border-white">
+            <div>
+              <p class="border-b-2 border-white px-3 py-2">
+                KRÆSS - a digital solution
+              </p>
+            </div>
+            <details class="border-b-2 border-white">
+              <summary class="px-3 py-2">
+                <span class="pl-2">Read More</span>
+              </summary>
+              <p class="px-7 py-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation
+              </p>
+            </details>
+
+            <details>
+              <summary class="px-3 py-2">
+                <span class="pl-2">My Tasks</span>
+              </summary>
+              <p class="px-7 py-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation
+              </p>
+            </details>
+          </div>
+        </article>
       </section>
     </main>
     <footer>
-      <p class="font-light text-center">© Evelina Falander 2022</p>
+      <p class="text-center font-light">© Evelina Falander 2022</p>
     </footer>
 
     <script type="module" src="./main.js"></script>
