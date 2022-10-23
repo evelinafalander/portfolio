@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Evelina Porfolio</title>
+    <title>evelina falander</title>
+    <link rel="icon" type="image/x-icon" href="svg/svart-e.svg" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +23,7 @@
         class="flip fixed top-[90px] right-[-65px] hidden text-right text-sm"
       >
         <a
-          class="underline hover:font-bold hover:text-purple"
+          class="underline hover:text-red-600"
           href="mailto:evelina.falander@gmail.com"
           target="_blank"
         >
@@ -31,14 +32,16 @@
         <p>tel. +46 725127411</p>
       </div>
       <div
-        class="flex flex-col px-10 pt-12 uppercase xl:place-self-end xl:pr-10"
+        class="flex flex-col px-12 pt-12 uppercase xl:place-self-end xl:pr-10"
       >
-        <h1 class="stroke text-5xl md:pl-20 md:text-8xl xl:p-0 xxl:text-9xl">
+        <h1
+          class="stroke border-b-2 border-white text-5xl md:pl-20 md:text-8xl xl:p-0 xxl:text-9xl"
+        >
           Evelina
         </h1>
 
         <h1
-          class="stroke self-end pt-2 text-5xl md:pr-20 md:text-8xl xl:p-0 xxl:text-9xl"
+          class="stroke self-end border-b-2 border-white pt-2 text-5xl md:pr-20 md:text-8xl xl:p-0 xxl:text-9xl"
         >
           Falander
         </h1>
@@ -47,25 +50,32 @@
     <main>
       <!---HERO SECTION-->
       <section
-        class="grid grid-cols-3 pb-36 pt-36 xl:grid-cols-2 xl:pr-16 xxl:pt-10"
+        class="grid grid-cols-3 pb-36 pt-32 xl:grid-cols-2 xl:pr-16 xxl:pt-10"
       >
         <div
-          class="z-10 col-start-1 col-end-3 row-start-1 pt-12 pl-5 text-5xl tracking-wider text-green"
+          class="z-10 col-start-1 col-end-3 row-start-1 pt-16 pl-6 text-5xl tracking-wider text-green"
         >
           <h2 class="pb-1 uppercase">Digital</h2>
           <h2 class="uppercase">Designer</h2>
         </div>
-        <img
-          class="col-start-2 col-end-4 row-start-1 w-[90%] md:w-[80%] xxl:w-[70%] xxl:justify-self-start"
-          src="img/filler.png"
-          alt="photo of Evelina"
-        />
+        <video
+          class="col-start-2 col-end-4 row-start-1 w-[90%] border-2 border-red-600 md:w-[80%] xxl:w-[70%] xxl:justify-self-start"
+          autoplay
+          muted
+          loop
+        >
+          <source src="img/video.mp4" type="video/mp4" />
+        </video>
+
         <div
           class="absolute top-[500px] left-[20px] z-10 flex flex-col items-center justify-center rounded-full border-2 border-white bg-grey/80"
           style="height: 200px; width: 200px"
         >
-          <a class="underline" href="#aboutMe">ABOUT ME</a>
-          <a class="underline" href="#myProjects">MY PROJECTS</a>
+          <a class="underline hover:text-red-600" href="#aboutMe">About</a>
+          <a class="underline hover:text-red-600" href="#myProjects"
+            >Projects</a
+          >
+          <a class="underline hover:text-red-600" href="#myProjects">Contact</a>
         </div>
       </section>
 
@@ -84,7 +94,7 @@
         </div>
 
         <article
-          class="textSize px-12 py-20 md:px-20 xl:grid xl:grid-cols-2 xl:py-36 xl:px-36 xxl:px-60"
+          class="px-12 py-20 md:px-20 xl:grid xl:grid-cols-2 xl:py-36 xl:px-36 xxl:px-60"
         >
           <div class="border-2 border-white">
             <p class="p-5">
@@ -103,26 +113,38 @@
               >
                 Skills
               </h3>
-              <div class="flex justify-between border-b-2 border-white">
+              <div class="flex justify-between border-b-2 border-white text-sm">
                 <p class="">Figma</p>
-                <p class="font-extralight uppercase">Proficient</p>
+                <p class="uppercase">Proficient</p>
               </div>
-              <div class="flex justify-between border-b-2 border-white">
-                <p class="">Illustrator, Photoshop, InDesign</p>
-                <p class="font-extralight uppercase">Proficient</p>
+              <div class="flex justify-between border-b-2 border-white text-sm">
+                <p class="">Illustrator</p>
+                <p class="uppercase">Proficient</p>
               </div>
-              <div class="flex justify-between border-b-2 border-white">
+              <div class="flex justify-between border-b-2 border-white text-sm">
+                <p class="">InDesign</p>
+                <p class="uppercase">Proficient</p>
+              </div>
+              <div class="flex justify-between border-b-2 border-white text-sm">
+                <p class="">Photoshop</p>
+                <p class="uppercase">Intermediate</p>
+              </div>
+              <div class="flex justify-between border-b-2 border-white text-sm">
                 <p class="">Premier pro</p>
-                <p class="font-extralight uppercase">Intermediatet</p>
+                <p class="uppercase">Intermediate</p>
               </div>
 
-              <div class="flex justify-between border-b-2 border-white">
-                <p class="">HTML5, CSS</p>
-                <p class="font-extralight uppercase">Intermediate</p>
+              <div class="flex justify-between border-b-2 border-white text-sm">
+                <p class="">HTML5</p>
+                <p class="uppercase">Proficient</p>
               </div>
-              <div class="flex justify-between border-b-2 border-white">
+              <div class="flex justify-between border-b-2 border-white text-sm">
+                <p class="">CSS</p>
+                <p class="uppercase">Intermediate</p>
+              </div>
+              <div class="flex justify-between border-b-2 border-white text-sm">
                 <p class="">JavaScript</p>
-                <p class="font-extralight uppercase">Beginner</p>
+                <p class="uppercase">Beginner</p>
               </div>
             </div>
 
@@ -130,17 +152,14 @@
               <div
                 class="grid place-content-center border-r-2 border-white p-5"
               >
-                <a
-                  class="underline hover:font-bold hover:text-purple"
-                  href="#"
-                  target="_blank"
+                <a class="underline hover:text-red-600" href="#" target="_blank"
                   >Download CV</a
                 >
               </div>
 
               <div class="grid place-content-center p-5">
                 <a
-                  class="underline hover:font-bold hover:text-purple"
+                  class="underline hover:text-red-600"
                   href="https://www.linkedin.com/in/evelina-falander/"
                   target="_blank"
                   >Linkedin</a
